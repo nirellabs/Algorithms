@@ -6,7 +6,7 @@
  *  Insertion Sort, Merge Sort, Hybrid Sort, Quick Sort and some heuristics function like Median Of Three.
  *  This script prints as output the average time that choosen algorithm takes to sort the array for n dimension,
  *  and a boolean as result of the antagonist function to verify if every array is sorted correctly.
- * 
+ *  Threshold value depends on CPU machine.
 **/
 #include <time.h>
 #include <stdio.h>
@@ -19,7 +19,7 @@ const int min = 10;
 const int max = 10000;           
 const int nExp = 10;            
 const int maxRand = 1000000;    
-const int granularity = 10;     
+const int granularity = 10;
 const int thresholdHS = 100;      
 const int thresholdQS = 30;
 
@@ -97,7 +97,6 @@ void adaptedInsertionSort(int* A, const int left, const int right)
         A[j + 1] = key;
     }
 }
-
 //O(n*log(n))
 void merge(int* A, const int left, const int mid, const int right)
 {   
