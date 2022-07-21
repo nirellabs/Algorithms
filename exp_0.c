@@ -4,9 +4,9 @@
  *  while having the same theory complexity time by adding some heuristics function.
  *  Here we analyze the time complexity of the following comparison-based sorting algorithms:
  *  Insertion Sort, Merge Sort, Hybrid Sort, Quick Sort and some heuristics function like Median Of Three.
- *  This script prints as output a .csv file containing the average time that choosen algorithm takes to sort the array for n dimension
+ *  This code prints as output a .csv file containing the average time the choosen algorithm takes to sort the array for n dimension
  *  and a boolean as result of the antagonist function to verify if every array is sorted correctly.
- *  Threshold values depend on CPU structure or architecture.
+ *  Threshold values depend on CPU structure and architecture.
 **/
 #include <time.h>
 #include <stdio.h>
